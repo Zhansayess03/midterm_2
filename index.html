@@ -5,7 +5,7 @@
 	<title>Grasshopper</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@100;600&display=swap">
-	
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container">
@@ -15,47 +15,38 @@
 	<div class="content"><h2> Learn to code anywhere.</h2>
 	<p class="subtitle"> Grasshopper is available on iOS, Android, and all web browsers. <br>Your progress syncs seamlessly between devices.</p></div>
 	
-	<div class="image_2"><img class="title_img2" src="img/mobile.jpeg" width="300px" height="280px"></div>
+	<div id="ball"><img class="title_img2" src="img/mobile.jpeg" width="300px" height="280px"></div>
 
 </div>
-<div class="slider">
-	<div class="sliders">
-	<input type="radio" name="radio-btn" id="radio1">
-	<input type="radio" name="radio-btn" id="radio2">	
-	<input type="radio" name="radio-btn" id="radio3">	
-	<input type="radio" name="radio-btn" id="radio4">	
-	<input type="radio" name="radio-btn" id="radio5">		
 
 
-	</div>
-	<div class="slide1">
-	<div ><img class="slide1-img" src="img/mobile1.png" height="700px"></div>
-	<div> <p class="subtitle"> Visual puzzles develop your problem-solving skills and solidify coding concepts.Put your learning into practice with full projects on your laptop or tablet.Use industry-standard JavaScript with just a few taps on your phone.</p></div>
-</div>
-<!--
-	<div class="slide2">
-		<div ><img class="slide1-img" src="mobile1.png" height="700px"></div>
-	<div> <p class="subtitle"> Visual puzzles develop your problem-solving skills and solidify coding concepts.Put your learning into practice with full projects on your laptop or tablet.Use industry-standard JavaScript with just a few taps on your phone.</p></div>
+<div class="slideshow-container">
 
-	</div>
-	<div class="slide3">
-		<div ><img class="slide1-img" src="laptop.png" height="300px"></div>
-	<div> <p class="subtitle"> Put your learning into practice with full projects on your laptop or tablet..</p></div>
-		
-	</div>
-	<div class="slide4">
-		<div ><img class="slide1-img" src="mobile1.png" height="700px"></div>
-	<div> <p class="subtitle"> Visual puzzles develop your problem-solving skills and solidify coding concepts.Put your learning into practice with full projects on your laptop or tablet.Use industry-standard JavaScript with just a few taps on your phone.</p></div>
-		
-	</div>
-	<div class="slide5">
-		<div ><img class="slide1-img" src="mobile1.png" height="700px"></div>
-	<div> <p class="subtitle"> Visual puzzles develop your problem-solving skills and solidify coding concepts.Put your learning into practice with full projects on your laptop or tablet.Use industry-standard JavaScript with just a few taps on your phone.</p></div>
-		
-	</div>
+<div class="mySlides fade">
+  <img src="img/mobile1.png" style="height:700px;" >
+  <div class="text">Put your learning into practice with full projects on your laptop or tablet..</div>
 </div>
 
-//-->
+<div class="mySlides fade">
+ 
+  <img src="img/mobile1.png" style="height:700px;" >
+  <div class="text">Collect achievements as you learn new skills.</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="img/mobile1.png" style="height:700px; ">
+  <div class="text">Visual puzzles develop your problem-solving skills and solidify coding concepts.Put your learning into practice with full projects on your laptop or tablet.Use industry-standard JavaScript with just a few taps on your phone.</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
 
 
 <div class="container-2">
@@ -92,10 +83,42 @@
 <div class="container-3-btn">
 	<div class="container-3-btn_items">
 		<img src="img/google-play.png" height="50px">
-		<span>Download on the</span>
+		<span>GET IT ON</span>
 		<span class="google">App Store</span>
 	</div>
 </div>
+</div>
+
+<div>
+	<div id="circle"> 
+</div>
+<div>
+	<div id="circle1"> 
+</div>
+<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+
+
 </div>
 
 <footer class="footer">
@@ -144,6 +167,6 @@
   
   
 </footer>
-
+<script src="app.js"></script>
 </body>
 </html>
